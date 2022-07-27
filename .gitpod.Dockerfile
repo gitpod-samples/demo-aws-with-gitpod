@@ -1,16 +1,8 @@
-# syntax=docker/dockerfile:1.4
 FROM gitpod/workspace-full
 
 USER root
 
-COPY --from=amazon/aws-cli:latest /usr/local/aws-cli/ /usr/local/aws-cli/
-
-# make sure we have these handy utilities
-RUN apt install -y inetutils-ping traceroute curl wget
-
-RUN chmod +x /usr/local/aws-cli/v2/current/bin/aws && ln -s /usr/local/aws-cli/v2/current/bin/aws /usr/local/bin/aws
-
-RUN chmod -R +x /usr/local/bin
+RUN brew update && brew install awscli docker-credential-helper-ecr
 
 USER gitpod
 
