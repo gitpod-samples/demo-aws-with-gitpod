@@ -34,3 +34,4 @@ $ command + command output that demonstrates pushing/pulling to/from ECR in Gitp
 
 - https://formulae.brew.sh/formula/docker-credential-helper-ecr
 - https://formulae.brew.sh/formula/awscli
+- https://formulae.brew.sh/cask/session-manager-plugin
