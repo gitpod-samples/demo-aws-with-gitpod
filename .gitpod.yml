@@ -80,6 +80,17 @@
 #     gp await-port $WEBSERVER_PORT
 #     lynx `gp url`
 
+tasks:
+  - name: AWS SSO Login
+    openMode: split-left
+    env:
+      BROWSER: "/ide/bin/helpers/browser.sh"
+    command: |
+      aws sso login 
+  - name: Bash
+    openMode: split-right
+    command: |
+      bash
 
 ## The 'ports' section defines various ports your may listen on are 
 ## configured in Gitpod on an authenticated URL. By default, all ports
