@@ -14,6 +14,7 @@ Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Cont
 ### Gitpod
 
 - [One workspace per task](https://www.gitpod.io/docs/workspaces)
+- [Environment variables](https://www.gitpod.io/docs/environment-variables#using-the-account-settings)
 
 ### AWS
 
