@@ -26,6 +26,10 @@ $ command + command output that demonstrates pushing/pulling to/from ECR in Gitp
 - [Using Amazon ECR with the AWS CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)
 - [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
 
+### Docker
+
+- [Docker command line configuration files](https://docs.docker.com/engine/reference/commandline/cli/#configuration-files)
+
 ### Homebrew
 
 - https://formulae.brew.sh/formula/docker-credential-helper-ecr
