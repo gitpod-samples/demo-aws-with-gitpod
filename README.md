@@ -20,6 +20,7 @@ Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Cont
 
 - [AWS CLI Command Reference // login](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/login.html)
 - [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+- [Using Amazon ECR with the AWS CLI](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html)
 
 ### Homebrew
 
