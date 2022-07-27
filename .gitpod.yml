@@ -38,6 +38,9 @@
 #  file: .gitpod.Dockerfile                # relative path to the Dockerfile from the
 #                                          # root of the project
 
+image:
+  file: .gitpod.Dockerfile
+
 ## The 'tasks' section defines how Gitpod prepares and builds this project
 ## or how Gitpod can start development servers. With Gitpod, there are three
 ## types of tasks:
