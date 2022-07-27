@@ -4,14 +4,14 @@ Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Cont
 
 Learn more about cloning additional repositories and delegation at https://www.gitpod.io/docs/multi-repo-workspaces
 
-## Demo
+## 🚀 Demo
 
 <a href="https://gitpod.io/#https://github.com/gitpod-io/demo-gitpod-with-aws"><img src="https://gitpod-staging.com/button/open-in-gitpod.svg"/></a>
 
 ```bash
 ```
 
-# Additional Material
+# 📖 Recommended Reading
 
 ## Gitpod
 
