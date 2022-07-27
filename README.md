@@ -7,6 +7,7 @@ Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Cont
 <a href="https://gitpod.io/#https://github.com/gitpod-io/demo-gitpod-with-aws"><img src="https://gitpod-staging.com/button/open-in-gitpod.svg"/></a>
 
 ```bash
+$ command that demonstrates pushing/pulling to/from ECR in Gitpod
 ```
 
 ## Recommended Reading
