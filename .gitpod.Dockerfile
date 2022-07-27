@@ -11,11 +11,6 @@ USER gitpod
 RUN <<'EOF' bash
 set -e
 
-# install ECR credential helper:
-ECR_LATEST=$(curl -s https://api.github.com/repos/awslabs/amazon-ecr-credential-helper/releases/latest | jq -r ".tag_name")
-curl -o docker-credential-ecr-login -fSsL "https://amazon-ecr-credential-helper-releases.s3.us-east-2.amazonaws.com/${ECR_LATEST##*v}/linux-amd64/docker-credential-ecr-login"
-sudo mv docker-credential-ecr-login /usr/local/bin/docker-credential-ecr-login
-sudo chmod +x /usr/local/bin/docker-credential-ecr-login
 
 mkdir -p /home/gitpod/.aws/
 
