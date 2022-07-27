@@ -12,7 +12,13 @@ Learn more about cloning additional repositories and delegation at https://www.g
 ```
 
 # Additional Material
-- Gitpod: [One workspace per task](https://www.gitpod.io/docs/workspaces)
-- AWS: [AWS CLI Command Reference // login](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/login.html)
-- AWS: [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
+
+## Gitpod
+
+- [One workspace per task](https://www.gitpod.io/docs/workspaces)
+
+## AWS
+
+- [AWS CLI Command Reference // login](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/sso/login.html)
+- [AWS Systems Manager Session Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)
 
