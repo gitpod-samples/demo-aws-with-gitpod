@@ -10,6 +10,13 @@ Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Cont
 $ command + command output that demonstrates pushing/pulling to/from ECR in Gitpod
 ```
 
+### Secret Management
+
+```
+1. configure your secrests in gitpod here.
+2. Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the worksapce starts. heres how.
+```
+
 ## Recommended Reading
 
 ### Gitpod
