@@ -22,7 +22,7 @@ region = ${AWS_REGION}
 
 1. configure your secrests in gitpod here.
 2. Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the worksapce starts. heres how.
-```
+
 
 ## Recommended Reading
 
