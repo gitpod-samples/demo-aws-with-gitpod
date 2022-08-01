@@ -20,3 +20,8 @@ RUN cd /tmp && \
     curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" && \
     sudo dpkg -i session-manager-plugin.deb && \
     rm -rf session-manager-plugin.deb
+
+# Configure AWS with Gitpod
+RUN mkdir -p /home/gitpod/.aws /home/gitpod/.docker
+COPY .gitpod.configure.sh /home/gitpod/.aws/configure.sh
+RUN echo ". /home/gitpod/.aws/configure.sh" >> /home/gitpod/.bashrc

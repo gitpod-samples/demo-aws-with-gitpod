@@ -86,8 +86,6 @@ image:
 tasks:
   - name: AWS SSO Login
     openMode: split-left
-    env:
-      BROWSER: "/ide/bin/helpers/browser.sh"
     command: |
       aws sso login 
   - name: Bash

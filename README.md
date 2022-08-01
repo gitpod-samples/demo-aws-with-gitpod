@@ -12,7 +12,14 @@ $ command + command output that demonstrates pushing/pulling to/from ECR in Gitp
 
 ### Secret Management
 
+```bash
+sso_start_url = ${AWS_SSO_URL}
+sso_region = ${AWS_SSO_REGION}
+sso_account_id = ${AWS_ACCOUNT_ID}
+sso_role_name = ${AWS_ROLE_NAME}
+region = ${AWS_REGION}
 ```
+
 1. configure your secrests in gitpod here.
 2. Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the worksapce starts. heres how.
 ```
