@@ -43,9 +43,3 @@ region = ${AWS_REGION}
 ### Docker
 
 - [Docker command line configuration files](https://docs.docker.com/engine/reference/commandline/cli/#configuration-files)
-
-### Homebrew
-
-- https://formulae.brew.sh/formula/docker-credential-helper-ecr
-- https://formulae.brew.sh/formula/awscli
-- https://formulae.brew.sh/cask/session-manager-plugin
