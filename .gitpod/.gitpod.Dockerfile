@@ -23,5 +23,5 @@ RUN cd /tmp && \
 
 # Configure AWS with Gitpod
 RUN mkdir -p /home/gitpod/.aws /home/gitpod/.docker
-COPY .gitpod.configure.sh /home/gitpod/.aws/configure.sh
+COPY .gitpod/.gitpod.configure.sh /home/gitpod/.aws/configure.sh
 RUN echo ". /home/gitpod/.aws/configure.sh" >> /home/gitpod/.bashrc

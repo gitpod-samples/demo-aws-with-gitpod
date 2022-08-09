@@ -7,7 +7,7 @@
 ## dependencies to download and builds to finish when reviewing pull-requests
 ## or hacking on something new.
 ##
-## With Gitpod you can develop software from any device (even iPads) via 
+## With Gitpod you can develop software from any device (even iPads) via
 ## desktop or browser based versions of VS Code or any JetBrains IDE and
 ## customise it to your individual needs - from themes to extensions, you
 ## have full control.
@@ -18,8 +18,7 @@
 ##
 ## For example: 'https://gitpod.io#https://github.com/gitpod-io/gitpod'
 
-
-## The 'image' section defines which Docker image Gitpod should use. 
+## The 'image' section defines which Docker image Gitpod should use.
 ## By default, Gitpod uses a standard Docker Image called 'workspace-full'
 ## which can be found at 'https://github.com/gitpod-io/workspace-images'
 ##
@@ -29,7 +28,7 @@
 ##
 ## If this image does not include the tools needed for your project then
 ## a public Docker image or your own Docker file can be configured.
-## 
+##
 ## Learn more about images at 'https://www.gitpod.io/docs/config-docker'
 
 #image: node:buster                        # use 'https://hub.docker.com/_/node'
@@ -39,13 +38,13 @@
 #                                          # root of the project
 
 image:
-  file: .gitpod.Dockerfile
+  file: .gitpod/.gitpod.Dockerfile
 
 ## The 'tasks' section defines how Gitpod prepares and builds this project
 ## or how Gitpod can start development servers. With Gitpod, there are three
 ## types of tasks:
 ##
-## - before: Use this for tasks that need to run before init and before command. 
+## - before: Use this for tasks that need to run before init and before command.
 ## - init: Use this to configure prebuilds of heavy-lifting tasks such as
 ##         downloading dependencies or compiling source code.
 ## - command: Use this to start your database or application when the workspace starts.
@@ -57,12 +56,12 @@ image:
 #      # commands to execute...
 #
 #  - init: |
-#      # sudo apt-get install python3     # can be used to install operating system 
+#      # sudo apt-get install python3     # can be used to install operating system
 #                                         # dependencies but these are not kept after the
 #                                         # prebuild completes thus Gitpod recommends moving
 #                                         # operating system dependency installation steps
 #                                         # to a custom Dockerfile to make prebuilds faster
-#                                         # and to keep your codebase DRY.  
+#                                         # and to keep your codebase DRY.
 #                                         # 'https://www.gitpod.io/docs/config-docker'
 #
 #      # pip install -r requirements.txt  # install codebase dependencies
@@ -87,13 +86,13 @@ tasks:
   - name: AWS SSO Login
     openMode: split-left
     command: |
-      aws sso login 
+      aws sso login
   - name: Bash
     openMode: split-right
     command: |
       bash
 
-## The 'ports' section defines various ports your may listen on are 
+## The 'ports' section defines various ports your may listen on are
 ## configured in Gitpod on an authenticated URL. By default, all ports
 ## are in private visibility state.
 ##
@@ -103,7 +102,6 @@ tasks:
 #  - port: 8080 # alternatively configure entire ranges via '8080-8090'
 #    visibility: private # either 'public' or 'private' (default)
 #    onOpen: open-browser # either 'open-browser', 'open-preview' or 'ignore'
-
 
 ## The 'vscode' section defines a list of Visual Studio Code extensions from
 ## the OpenVSX.org registry to be installed upon workspace startup. OpenVSX
@@ -118,11 +116,10 @@ tasks:
 ## Learn more at 'https://www.gitpod.io/docs/ides-and-editors/vscode'
 
 #vscode:
-#  extensions: 
+#  extensions:
 #    - vscodevim.vim
 #    - esbenp.prettier-vscode@9.5.0
 #    - https://example.com/abc/releases/extension-0.26.0.vsix
-
 
 ## The 'github' section defines configuration of continuous prebuilds
 ## for GitHub repositories when the GitHub application
@@ -131,7 +128,7 @@ tasks:
 ##
 ## Learn more at 'https://www.gitpod.io/docs/prebuilds'
 
-github: 
+github:
   prebuilds:
     # enable for the default branch
     master: true
