@@ -2,15 +2,9 @@
 
 Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) with Gitpod? Here's how...
 
-## Demo
+## Secret Management
 
-<a href="https://gitpod.io/#https://github.com/gitpod-io/demo-gitpod-with-aws"><img src="https://gitpod-staging.com/button/open-in-gitpod.svg"/></a>
-
-```bash
-$ command + command output that demonstrates pushing/pulling to/from ECR in Gitpod
-```
-
-### Secret Management
+### Secrets Key-Value Map
 
 ```bash
 sso_start_url = ${AWS_SSO_URL}
@@ -20,9 +14,25 @@ sso_role_name = ${AWS_ROLE_NAME}
 region = ${AWS_REGION}
 ```
 
-1. configure your secrests in gitpod here.
-2. Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the worksapce starts. heres how.
+### Configure secrets
 
+- Configure the following secrets [here in Gitpod settings](https://gitpod.io/variables):
+
+  - `AWS_SSO_URL`
+  - `AWS_SSO_REGION`
+  - `AWS_ACCOUNT_ID`
+  - `AWS_ROLE_NAME`
+  - `AWS_REGION`
+
+  <br>
+
+  > **Note**: You Can set scope at for all worskapces (⚠️) or at your Org. Level, at your Personal username level, or at Just Repo. Level. _Read More: [Configure Environment Variables](https://www.gitpod.io/docs/environment-variables#using-the-account-settings)_
+
+- Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the workspace starts.
+
+## Demo
+
+<a href="https://gitpod.io/#https://github.com/gitpod-io/demo-gitpod-with-aws"><img src="https://gitpod.io/button/open-in-gitpod.svg"/></a>
 
 ## Recommended Reading
 
@@ -31,7 +41,7 @@ region = ${AWS_REGION}
 - [One workspace per task](https://www.gitpod.io/docs/workspaces)
 - [Environment variables](https://www.gitpod.io/docs/environment-variables#using-the-account-settings)
 - [Custom Docker Image](https://www.gitpod.io/docs/config-docker)
-- [.gitpod.yml](https://www.gitpod.io/docs/config-gitpod-file)
+- [Config `.gitpod.yml`](https://www.gitpod.io/docs/config-gitpod-file)
 
 ### AWS
 
