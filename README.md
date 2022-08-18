@@ -1,6 +1,6 @@
 # Gitpod with AWS
 
-Ever wondered how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) with Gitpod? Here's how...
+This repository contains an example of how to integrate AWS Single Sign-On (SSO) and [Amazon Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) with Gitpod.
 
 ## Secret Management
 
@@ -28,7 +28,7 @@ region = ${AWS_REGION}
 
   > **Note**: You Can set scope at for all worskapces (⚠️) or at your Org. Level, at your Personal username level, or at Just Repo. Level. _Read More: [Configure Environment Variables](https://www.gitpod.io/docs/environment-variables#using-the-account-settings)_
 
-- Maybe you use vault or some other secret storage, that's okay. the key is to inject them into the config when the workspace starts.
+- Maybe you use vault or some other secret storage, that's okay. The key is to inject them into the config when the workspace starts.
 
 ## Demo
 
