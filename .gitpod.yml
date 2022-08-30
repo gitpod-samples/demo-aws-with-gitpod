@@ -16,7 +16,7 @@ tasks:
   - name: Initialize & Configure AWS
     command: bash $GITPOD_REPO_ROOT/configure_aws_with_gitpod.sh && gp sync-done aws-setup
   - name: AWS SSO Login
-    command: gp sync-await aws-setup && aws sso login
+    command: gp sync-await aws-setup && aws sso login --no-browser
 
 # The 'github' section defines configuration of continuous prebuilds
 # for GitHub repositories when the GitHub application
